@@ -2,6 +2,7 @@ package net.cyithriel.mysticamod;
 
 import com.mojang.logging.LogUtils;
 import net.cyithriel.mysticamod.item.ModItems;
+import net.cyithriel.mysticamod.item.block.ModBlocks;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -32,6 +33,7 @@ public class MysticaMod {
         MinecraftForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
 
 
@@ -55,6 +57,10 @@ public class MysticaMod {
             event.accept(ModItems.RAW_PUF);
 
 
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.PUF_BLOCK);
         }
 
     }

@@ -1,4 +1,6 @@
 {
   "item.mystica.puf": "Puf",
-  "item.mystica.raw_puf": "Raw Puf"
+  "item.mystica.raw_puf": "Raw Puf",
+
+  "block.mystica.puf_block": "Puf Block"
 }
