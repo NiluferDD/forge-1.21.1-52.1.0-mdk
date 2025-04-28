@@ -52,6 +52,8 @@ public class MysticaMod {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.PUF);
+            event.accept(ModItems.RAW_PUF);
+
 
         }
 
